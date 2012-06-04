@@ -42,7 +42,8 @@ import org.eclipse.swt.widgets.Text;
  * See the License for the specific language governing permissions
  * and limitations under the License.
  */
-
+import guitypes.checkers.quals.*;
+@UIType
 public class RuleDialog extends StatusDialog {
 
     // Attribute --------------------------------------------------------------------

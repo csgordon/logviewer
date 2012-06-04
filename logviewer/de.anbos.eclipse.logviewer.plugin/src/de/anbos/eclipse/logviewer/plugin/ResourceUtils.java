@@ -41,6 +41,8 @@ import org.eclipse.ui.part.IPage;
 import org.eclipse.ui.part.MessagePage;
 import org.eclipse.ui.part.PageBookView;
 
+import guitypes.checkers.quals.*;
+@UIType
 public class ResourceUtils {
 
     static public ISelection getResourceSelection(IWorkbenchPart part) {

@@ -34,7 +34,8 @@ import de.anbos.eclipse.logviewer.plugin.LogFile;
 import de.anbos.eclipse.logviewer.plugin.LogViewerPlugin;
 import de.anbos.eclipse.logviewer.plugin.file.BackgroundReader;
 import de.anbos.eclipse.logviewer.plugin.file.IFileChangedListener;
-
+import guitypes.checkers.quals.*;
+@UIType
 public class LogDocument extends AbstractDocument implements IFileChangedListener {
 
 	// Attribute ---------------------------------------------------------------
@@ -188,8 +189,8 @@ public class LogDocument extends AbstractDocument implements IFileChangedListene
 	/* (non-Javadoc)
 	 * @see de.anbos.eclipse.logviewer.plugin.file.IFileChangedListener#contentAboutToBeChanged()
 	 */
-	public void contentAboutToBeChanged() {
-        Runnable runnable = new Runnable() {
+	@SafeEffect public void contentAboutToBeChanged() {
+        @UI Runnable runnable = new @UI Runnable() {
             public void run() {
         		DocumentEvent event = new DocumentEvent(LogDocument.this, getStore().getLength(),0,""); //$NON-NLS-1$
         		fireDocumentAboutToBeChanged(event);
@@ -203,8 +204,8 @@ public class LogDocument extends AbstractDocument implements IFileChangedListene
 	/* (non-Javadoc)
 	 * @see de.anbos.eclipse.logviewer.plugin.file.IFileChangedListener#fileChanged(char[])
 	 */
-	public void fileChanged(final char[] content, final boolean isFirstTimeRead) {
-        Runnable runnable = new Runnable() {
+	@SafeEffect public void fileChanged(final char[] content, final boolean isFirstTimeRead) {
+        @UI Runnable runnable = new @UI Runnable() {
             public void run() {
         		String text = new String(content);
         		int offset = calculateBacklogOffset();
