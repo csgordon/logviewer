@@ -25,7 +25,8 @@ import org.eclipse.ui.console.IConsolePageParticipant;
 import org.eclipse.ui.part.IPageBookViewPage;
 
 import de.anbos.eclipse.logviewer.plugin.action.ConsoleOpenAction;
-
+import guitypes.checkers.quals.*;
+@UIType
 public class ConsolePageParticipant implements IConsolePageParticipant {
 
 	private IPageBookViewPage page;

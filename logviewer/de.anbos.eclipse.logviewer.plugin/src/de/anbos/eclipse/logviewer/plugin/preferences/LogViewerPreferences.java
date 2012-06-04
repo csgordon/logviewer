@@ -38,7 +38,8 @@ import de.anbos.eclipse.logviewer.plugin.ui.EncodingComboEditor;
  * See the License for the specific language governing permissions
  * and limitations under the License.
  */
-
+import guitypes.checkers.quals.*;
+@UIType
 public class LogViewerPreferences extends PreferencePage implements IWorkbenchPreferencePage {
 
 	// Attribute ---------------------------------------------------------------
@@ -116,7 +117,7 @@ public class LogViewerPreferences extends PreferencePage implements IWorkbenchPr
 		return pageComponent;
 	}
 	
-	protected IPreferenceStore doGetPreferenceStore() {
+	@SafeEffect protected IPreferenceStore doGetPreferenceStore() {
 		return LogViewerPlugin.getDefault().getPreferenceStore();
 	}
 	

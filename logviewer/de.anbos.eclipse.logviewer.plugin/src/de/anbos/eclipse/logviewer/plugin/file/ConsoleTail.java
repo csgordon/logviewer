@@ -41,6 +41,7 @@ import de.anbos.eclipse.logviewer.plugin.ILogViewerConstants;
 import de.anbos.eclipse.logviewer.plugin.LogViewerPlugin;
 import de.anbos.eclipse.logviewer.plugin.Logger;
 import de.anbos.eclipse.logviewer.plugin.ResourceUtils;
+import guitypes.checkers.quals.*;
 
 public class ConsoleTail implements IDocumentListener, Runnable {
 

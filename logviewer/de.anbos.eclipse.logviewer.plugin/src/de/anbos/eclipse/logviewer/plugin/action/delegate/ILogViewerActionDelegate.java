@@ -18,8 +18,9 @@ import de.anbos.eclipse.logviewer.plugin.LogViewer;
  * See the License for the specific language governing permissions
  * and limitations under the License.
  */
+import guitypes.checkers.quals.*;
 
 public interface ILogViewerActionDelegate {
 
-	public void run(LogViewer view, Shell shell);
+	@UIEffect public void run(LogViewer view, Shell shell);
 }
