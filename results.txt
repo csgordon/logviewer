@@ -1,6 +1,9 @@
 http://code.google.com/a/eclipselabs.org/p/logviewer
 
 
-Initial error count: 464 errors
+(note the initial error counts are pre-stub file!  Well, this one is after the stub file for the
+previous project)
+Initial error count: 458 errors
 
++30 (0:30): 382.  Marked a few types safe.
 
