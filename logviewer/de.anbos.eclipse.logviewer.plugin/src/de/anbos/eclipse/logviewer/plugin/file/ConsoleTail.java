@@ -92,11 +92,11 @@ public class ConsoleTail implements IDocumentListener, Runnable {
 		return idx != -1 ? fullName.substring(0, idx) : fullName;
 	}
 
-	public void documentAboutToBeChanged(DocumentEvent event) {
+	@SafeEffect public void documentAboutToBeChanged(DocumentEvent event) { // Colin Gordon: anno only needed due to checker bug for safe overrides of ui methods
 		listener.contentAboutToBeChanged();
 	}
 
-	public void documentChanged(DocumentEvent event) {
+	@SafeEffect public void documentChanged(DocumentEvent event) { // Colin Gordon: anno only needed due to checker bug for safe overrides of ui methods
 		listener.fileChanged(event.getText().toCharArray(), isFirstTimeRead);
 		isFirstTimeRead = false;
 	}
@@ -144,7 +144,7 @@ public class ConsoleTail implements IDocumentListener, Runnable {
 
 	// Private -----------------------------------------------------------------
 
-	private synchronized IDocument openConsole() throws ThreadInterruptedException {
+	@SafeEffect private synchronized IDocument openConsole() throws ThreadInterruptedException {
 		IDocument myDoc = null;
 		boolean firstExec = true;
 		while(isRunning) {
@@ -197,7 +197,7 @@ public class ConsoleTail implements IDocumentListener, Runnable {
 	}
 	*/
 	
-	private IDocument getConsoleDocument() throws FileNotFoundException {
+	@SafeEffect private IDocument getConsoleDocument() throws FileNotFoundException {
 		if (con != null) {
 			if(con instanceof TextConsole) {
 				return ((TextConsole)con).getDocument();
