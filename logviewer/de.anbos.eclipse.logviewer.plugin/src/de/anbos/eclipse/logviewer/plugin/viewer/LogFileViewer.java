@@ -69,7 +69,7 @@ public class LogFileViewer {
 			fontData = JFaceResources.getDefaultFont().getFontData();
 		}
 		txtViewer.getTextWidget().setFont(new Font(Display.getCurrent(),fontData));
-		store.addPropertyChangeListener(new PropertyChangeListener());
+		store.addPropertyChangeListener(new @UI PropertyChangeListener()); // Colin Gordon: BUG? This PropertyChangeListener is certainly UI since it calls SWT widget methods, but the global preference store can fire off listeners on any thread!  Also, there's a checker bug here - should issue an error without the @UI
 		createCursorLinePainter();
 		createAndInstallPresentationReconciler();
 	}
@@ -156,7 +156,7 @@ public class LogFileViewer {
 
 	// Inner classes ----------------------------------------------------------------
 	
-	private class PropertyChangeListener implements IPropertyChangeListener {
+	@UI private class PropertyChangeListener implements @UI IPropertyChangeListener {
 		
 			/* (non-Javadoc)
 		 * @see org.eclipse.jface.util.IPropertyChangeListener#propertyChange(org.eclipse.jface.util.PropertyChangeEvent)

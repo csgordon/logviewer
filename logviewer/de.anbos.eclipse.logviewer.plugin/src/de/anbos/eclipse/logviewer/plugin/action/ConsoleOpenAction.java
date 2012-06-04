@@ -30,6 +30,8 @@ import de.anbos.eclipse.logviewer.plugin.LogViewer;
 import de.anbos.eclipse.logviewer.plugin.LogFile.LogFileType;
 
 
+import guitypes.checkers.quals.*;
+@UIType
 public class ConsoleOpenAction implements IObjectActionDelegate {
 
 	IConsole resource[] = null;

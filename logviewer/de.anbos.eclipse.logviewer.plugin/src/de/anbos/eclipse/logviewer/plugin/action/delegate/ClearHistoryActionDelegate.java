@@ -23,6 +23,8 @@ import de.anbos.eclipse.logviewer.plugin.LogViewer;
 import de.anbos.eclipse.logviewer.plugin.LogViewerPlugin;
 import de.anbos.eclipse.logviewer.plugin.preferences.FileHistoryTracker;
 
+import guitypes.checkers.quals.*;
+@UIType
 public class ClearHistoryActionDelegate implements ILogViewerActionDelegate {
 
 	// Attribute ---------------------------------------------------------------

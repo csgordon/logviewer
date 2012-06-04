@@ -34,6 +34,8 @@ import de.anbos.eclipse.logviewer.plugin.Logger;
  * and limitations under the License.
  */
 
+import guitypes.checkers.quals.*;
+@UIType
 public class EncodingDialog extends Dialog {
 
 	// Attribute ---------------------------------------------------------------
