@@ -22,12 +22,12 @@ echo $COMMAND
 JAVAFILES=`find . -name "*.java"`
 #echo $JAVAFILES
 
-if [ -e $CHECKER ];
-then
-    find . -name '*.java' | xargs $COMMAND;
-else
+#if [ -e $CHECKER ];
+#then
+#    find . -name '*.java' | xargs $COMMAND;
+#else
     pushd ~/research/guitypes/checker && ant dist && popd && find . -name '*.java' | xargs $COMMAND;
-fi
+#fi
 
 
 #

@@ -27,7 +27,7 @@ import org.osgi.framework.BundleContext;
  * See the License for the specific language governing permissions
  * and limitations under the License.
  */
-
+import guitypes.checkers.quals.*;
 /**
  * The main plugin class to be used in the desktop.
  */
@@ -124,25 +124,25 @@ public class LogViewerPlugin extends AbstractUIPlugin {
 		return resourceBundle;
 	}
 	
-    public void showErrorMessage(String message) {
+    @UIEffect public void showErrorMessage(String message) {
         IWorkbenchWindow window = getDefault().getWorkbench().getActiveWorkbenchWindow();
         if(window != null) {
             MessageDialog.openError(window.getShell().getShell(),getResourceString("error.fatal.title"),message); //$NON-NLS-1$
     	    }
   	}
 
-	public void showErrorMessage(Throwable throwable) {
+	@UIEffect public void showErrorMessage(Throwable throwable) {
 	    showErrorMessage(throwable.getClass().getName() + " " + throwable.getMessage()); //$NON-NLS-1$
 	}
 
-	public void showInfoMessage(String message) {
+	@UIEffect public void showInfoMessage(String message) {
 	    IWorkbenchWindow window = getDefault().getWorkbench().getActiveWorkbenchWindow();
      	if(window != null) {
      	    MessageDialog.openInformation(window.getShell().getShell(),getResourceString("error.info.title"),message); //$NON-NLS-1$
      	}
 	}
 
-	public void showWarningMessage(String message) {
+	@UIEffect public void showWarningMessage(String message) {
 	    IWorkbenchWindow window = getDefault().getWorkbench().getActiveWorkbenchWindow();
       	if(window != null) {
       	    MessageDialog.openWarning(window.getShell().getShell(),getResourceString("error.warning.title"),message); //$NON-NLS-1$

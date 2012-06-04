@@ -21,8 +21,9 @@ import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.console.IOConsole;
 import org.eclipse.ui.console.IOConsoleInputStream;
 import org.eclipse.ui.console.IOConsoleOutputStream;
+import guitypes.checkers.quals.*;
 
-public class LogViewerConsole extends IOConsole implements Runnable {
+public class LogViewerConsole extends IOConsole implements @AlwaysSafe Runnable {
 
     private IOConsoleOutputStream outStream;
     private IOConsoleInputStream inStream;
