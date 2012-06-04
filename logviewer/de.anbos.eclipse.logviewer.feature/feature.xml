@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="de.anbos.eclipse.logviewer.feature"
+      label="Log Viewer Feature"
+      version="0.9.8.8"
+      provider-name="Andre Bossert"
+      plugin="de.anbos.eclipse.logviewer.plugin">
+
+   <description url="http://code.google.com/a/eclipselabs.org/p/logviewer/">
+      The Eclipse Log Viewer is a non blocking IO stream reader that
+can tail any number of files and eclipse consoles.
+It allows to syntax color the log files with either a regular
+expression or a word match.
+   </description>
+
+   <copyright url="http://www.apache.org/licenses/LICENSE-2.0">
+      Copyright (c) 2009 - 2011 by Andre Bossert
+Licensed under the Apache License, Version 2.0 (the &amp;quot;License&amp;quot;);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an &amp;quot;AS
+IS&amp;quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+or implied.
+See the License for the specific language governing permissions
+and limitations under the License.
+   </copyright>
+
+   <license url="http://www.apache.org/licenses/LICENSE-2.0">
+      Copyright (c) 2009 - 2011 by Andre Bossert
+Licensed under the Apache License, Version 2.0 (the &amp;quot;License&amp;quot;);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an &amp;quot;AS
+IS&amp;quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
+or implied.
+See the License for the specific language governing permissions
+and limitations under the License.
+   </license>
+
+   <url>
+      <update label="Eclipse Log Viewer Update Site" url="http://logviewer.eclipselabs.org.codespot.com/git/de.anbos.eclipse.logviewer.update/"/>
+      <discovery label="Eclipse Log Viewer Update Site" url="http://logviewer.eclipselabs.org.codespot.com/git/de.anbos.eclipse.logviewer.update/"/>
+   </url>
+
+   <plugin
+         id="de.anbos.eclipse.logviewer.plugin"
+         download-size="0"
+         install-size="0"
+         version="0.9.8.8"
+         unpack="false"/>
+
+</feature>

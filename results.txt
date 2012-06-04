@@ -1,0 +1,6 @@
+http://code.google.com/a/eclipselabs.org/p/logviewer
+
+
+Initial error count: 464 errors
+
+
