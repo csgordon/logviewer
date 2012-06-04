@@ -31,6 +31,8 @@ import de.anbos.eclipse.logviewer.plugin.ResourceUtils;
 import de.anbos.eclipse.logviewer.plugin.LogFile.LogFileType;
 
 
+import guitypes.checkers.quals.*;
+@UIType
 public class FileOpenAction implements IObjectActionDelegate {
 
 	private File[] resource = null;
