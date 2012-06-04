@@ -8,3 +8,4 @@ Initial error count: 458 errors
 +30 (0:30): 382.  Marked a few types safe.
 +30 (1:00): 73.  Mostly marking things @UIType, a couple @UI Runnables
 +15 (1:15): 55.  Marking @UITypes
++15 (1:30): 48.  Marked a couple JFace utility classes @SafeType, plus a new UIType
