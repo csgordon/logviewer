@@ -23,6 +23,8 @@ import de.anbos.eclipse.logviewer.plugin.action.delegate.RefreshCurrentFileActio
  * and limitations under the License.
  */
 
+import guitypes.checkers.quals.*;
+@UIType
 public class RefreshCurrentFileViewAction extends AbstractViewAction {
 
     // Constructor ------------------------------------------------------------------
