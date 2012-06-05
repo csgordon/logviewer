@@ -228,7 +228,7 @@ public class ConsoleTail implements IDocumentListener, Runnable {
 				};
 				uiJob.schedule();
 	            if (viewer != null)
-	            	return viewer.getDocument();				
+	            	return viewer.getDocument(); // Colin Gordon: Not sure if this is safe or a bug. The /implementation/ is safe, but that may not be intentional
 			}
 		}
 		throw new FileNotFoundException("no document found");
