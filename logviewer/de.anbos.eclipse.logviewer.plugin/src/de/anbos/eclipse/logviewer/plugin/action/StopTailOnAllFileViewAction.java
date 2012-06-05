@@ -23,6 +23,8 @@ import de.anbos.eclipse.logviewer.plugin.LogViewerPlugin;
 import de.anbos.eclipse.logviewer.plugin.UIImages;
 import de.anbos.eclipse.logviewer.plugin.action.delegate.StopTailOnAllFileActionDelegate;
 
+import guitypes.checkers.quals.*;
+@UIType
 public class StopTailOnAllFileViewAction extends AbstractViewAction {
 
     // Constructor -------------------------------------------------------------

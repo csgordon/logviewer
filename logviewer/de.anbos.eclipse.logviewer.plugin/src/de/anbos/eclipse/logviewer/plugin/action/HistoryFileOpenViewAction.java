@@ -22,6 +22,8 @@ import de.anbos.eclipse.logviewer.plugin.preferences.HistoryFile;
  * and limitations under the License.
  */
 
+import guitypes.checkers.quals.*;
+@UIType
 public class HistoryFileOpenViewAction extends AbstractViewAction {
 	
 	// Constructor -------------------------------------------------------------

@@ -26,9 +26,11 @@ import org.eclipse.ui.texteditor.FindReplaceAction;
 
 import de.anbos.eclipse.logviewer.plugin.LogViewer;
 import de.anbos.eclipse.logviewer.plugin.LogViewerPlugin;
+import guitypes.checkers.quals.*;
 
-public class FindReplaceHandler implements IHandler {
+@UI public class FindReplaceHandler implements @UI IHandler { /* Colin Gordon: anno only b/c of the postDirectSupertypes() behavior. */
 
+	@SafeEffect /* Colin Gordon: anno only b/c of the postDirectSupertypes() behavior. */
 	public void addHandlerListener(IHandlerListener handlerListener) {
 		// TODO Auto-generated method stub
 
@@ -36,12 +38,13 @@ public class FindReplaceHandler implements IHandler {
 
 	FindReplaceAction action = null;
 	
+	@SafeEffect /* Colin Gordon: anno only b/c of the postDirectSupertypes() behavior. */
 	public void dispose() {
 		// TODO Auto-generated method stub
 
 	}
 
-	public Object execute(ExecutionEvent event) throws ExecutionException {
+	@UIEffect public Object execute(ExecutionEvent event) throws ExecutionException {
 		ResourceBundle bundle = LogViewerPlugin.getDefault().getResourceBundle();
 		if (action == null)
 			action = new FindReplaceAction(bundle,"dialog.findreplace.",(LogViewer)HandlerUtil.getActivePart(event));
@@ -49,14 +52,17 @@ public class FindReplaceHandler implements IHandler {
 		return null;
 	}
 
+	@SafeEffect /* Colin Gordon: anno only b/c of the postDirectSupertypes() behavior. */
 	public boolean isEnabled() {
 		return true;
 	}
 
+	@SafeEffect /* Colin Gordon: anno only b/c of the postDirectSupertypes() behavior. */
 	public boolean isHandled() {
 		return true;
 	}
 
+	@SafeEffect /* Colin Gordon: anno only b/c of the postDirectSupertypes() behavior. */
 	public void removeHandlerListener(IHandlerListener handlerListener) {
 		// TODO Auto-generated method stub
 

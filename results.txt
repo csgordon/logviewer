@@ -10,3 +10,4 @@ Initial error count: 458 errors
 +15 (1:15): 55.  Marking @UITypes
 +15 (1:30): 48.  Marked a couple JFace utility classes @SafeType, plus a new UIType
 +15 (1:45): 35.  Mostly marked a couple safe types and packages.
++60 (2:45): 20 (plus 2 warnings about redundant annotations because I haven't fixed the postDirectSupertypes() issue yet).  A few stub fixes, largely marking the AbstractViewAction heirarchy as UITypes.  Could probably replace those with a single package annotation.

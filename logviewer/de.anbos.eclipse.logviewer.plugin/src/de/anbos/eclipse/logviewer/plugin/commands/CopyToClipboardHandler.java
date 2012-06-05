@@ -24,34 +24,40 @@ import org.eclipse.ui.handlers.HandlerUtil;
 
 import de.anbos.eclipse.logviewer.plugin.LogViewer;
 import de.anbos.eclipse.logviewer.plugin.viewer.LogFileViewer;
+import guitypes.checkers.quals.*;
 
-public class CopyToClipboardHandler implements IHandler {
+@UI public class CopyToClipboardHandler implements @UI IHandler { /* Colin Gordon: anno only b/c of the postDirectSupertypes() behavior. */
 
-	public void addHandlerListener(IHandlerListener handlerListener) {
+	@SafeEffect /* Colin Gordon: anno only b/c of the postDirectSupertypes() behavior. */
+        public void addHandlerListener(IHandlerListener handlerListener) {
 		// TODO Auto-generated method stub
 
 	}
 
+	@SafeEffect /* Colin Gordon: anno only b/c of the postDirectSupertypes() behavior. */
 	public void dispose() {
 		// TODO Auto-generated method stub
 
 	}
 
-	public Object execute(ExecutionEvent event) throws ExecutionException {
+	@UIEffect public Object execute(ExecutionEvent event) throws ExecutionException {
 		LogFileViewer viewer = ((LogViewer)HandlerUtil.getActivePart(event)).getViewer();
 		StyledText text = viewer.getActualViewer().getTextWidget();
 		text.copy();
 		return null;
 	}
 
+	@SafeEffect /* Colin Gordon: anno only b/c of the postDirectSupertypes() behavior. */
 	public boolean isEnabled() {
 		return true;
 	}
 
+	@SafeEffect /* Colin Gordon: anno only b/c of the postDirectSupertypes() behavior. */
 	public boolean isHandled() {
 		return true;
 	}
 
+	@SafeEffect /* Colin Gordon: anno only b/c of the postDirectSupertypes() behavior. */
 	public void removeHandlerListener(IHandlerListener handlerListener) {
 		// TODO Auto-generated method stub
 
