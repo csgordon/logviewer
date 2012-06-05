@@ -14,3 +14,4 @@ Initial error count: 458 errors
 +15 (3:00): 10.  Largely marking things like JFaceResources and (shockingly) SWT Font as mostly safe
 +15 (3:15): 8.  A UI type, and marking FieldEditor.setPropertyChangeListener as taking a @UI listener
 +5 (3:20): 4.  Marked OpenWith as a UI type (plus extra safeeffects to work around postDirectSupertypes()).
++15 (3:35): 3.  One remaining is de facto safe though that may not be the design.  Another is a potentially safe call from a finalizer (it's at least an application weirdness, but will never cause problems because Eclipse never unloads plugins and the finalizer is on a menu).  The last is sticking a UI property change listener into the global jface property store, which seems okay for this application because the only code that touches the property store in this program is in the UI.

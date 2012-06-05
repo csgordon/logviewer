@@ -172,7 +172,7 @@ public class LogDocument extends AbstractDocument implements IFileChangedListene
 	 * to stop at the next possbile exit point.
 	 * @param monitor
 	 */
-	public void setMonitor(boolean monitorIn) {
+	@SafeEffect public void setMonitor(boolean monitorIn) {
 		if(monitorIn && !monitor) {
 			getStore().set(""); //$NON-NLS-1$
 			getTracker().set(""); //$NON-NLS-1$

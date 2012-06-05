@@ -72,8 +72,8 @@ public class LocalPullDownMenu implements IMenuListener {
 		actionList.add(FILELIST);
 	}
 
-	public void finalize() {
-		fillMenu(); // Colin Gordon: BUG? This seems like an application bug for sure, even if it's not a ui threading bug
+	@SafeEffect public void finalize() {
+		fillMenu(); // Colin Gordon: BUG: finalizers run on their own thread!  Even if fillMenu() doesn't really need to be UI, this is at least bizarre
 	}
 
 	public void menuAboutToShow(IMenuManager manager) {
