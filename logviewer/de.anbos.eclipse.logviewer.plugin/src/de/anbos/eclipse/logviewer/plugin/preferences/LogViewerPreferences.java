@@ -56,7 +56,7 @@ public class LogViewerPreferences extends PreferencePage implements IWorkbenchPr
     private Button showWhenUpdated;
     private Button showTopOfFile;
 	
-	private IPropertyChangeListener validityChangeListener;
+	private @UI IPropertyChangeListener validityChangeListener;
     
 	// Public ------------------------------------------------------------------
 	
@@ -64,7 +64,7 @@ public class LogViewerPreferences extends PreferencePage implements IWorkbenchPr
 	 * @see org.eclipse.ui.IWorkbenchPreferencePage#init(org.eclipse.ui.IWorkbench)
 	 */
 	public void init(IWorkbench workbench) {
-		validityChangeListener = new IPropertyChangeListener() {
+		validityChangeListener = new @UI IPropertyChangeListener() {
 			public void propertyChange(PropertyChangeEvent event) {
 				if (event.getProperty().equals(FieldEditor.IS_VALID)) 
 					updateValidState();
