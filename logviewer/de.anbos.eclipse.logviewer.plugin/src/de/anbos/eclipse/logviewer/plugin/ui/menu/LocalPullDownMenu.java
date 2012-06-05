@@ -31,6 +31,8 @@ import de.anbos.eclipse.logviewer.plugin.preferences.HistoryFile;
  * and limitations under the License.
  */
 
+import guitypes.checkers.quals.*;
+@UIType
 public class LocalPullDownMenu implements IMenuListener {
 
 	// Constant ----------------------------------------------------------------
@@ -71,7 +73,7 @@ public class LocalPullDownMenu implements IMenuListener {
 	}
 
 	public void finalize() {
-		fillMenu();
+		fillMenu(); // Colin Gordon: BUG? This seems like an application bug for sure, even if it's not a ui threading bug
 	}
 
 	public void menuAboutToShow(IMenuManager manager) {
