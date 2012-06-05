@@ -37,7 +37,7 @@ import guitypes.checkers.quals.*;
 		// TODO Auto-generated method stub
 	}
 
-	public Object execute(ExecutionEvent event) throws ExecutionException {
+	@UIEffect public Object execute(ExecutionEvent event) throws ExecutionException {
 		IWorkbenchPart part = HandlerUtil.getActivePart(event);
 		IObjectActionDelegate action = EditorPropertyTester.hasResourceSelection(part);
 		if (action == null) {
