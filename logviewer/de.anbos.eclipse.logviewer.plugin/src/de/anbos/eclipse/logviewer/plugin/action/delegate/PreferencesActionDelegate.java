@@ -26,9 +26,10 @@ import org.eclipse.ui.commands.ICommandService;
 import org.eclipse.ui.handlers.IHandlerService;
 
 import de.anbos.eclipse.logviewer.plugin.LogViewer;
+import guitypes.checkers.quals.*;
 
 
-public class PreferencesActionDelegate implements ILogViewerActionDelegate {
+@UIType public class PreferencesActionDelegate implements ILogViewerActionDelegate {
 
 	public void run(LogViewer view, Shell shell) {
 		

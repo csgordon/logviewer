@@ -4,6 +4,7 @@ import org.eclipse.swt.widgets.Shell;
 
 import de.anbos.eclipse.logviewer.plugin.LogViewer;
 import de.anbos.eclipse.logviewer.plugin.ui.EncodingDialog;
+import guitypes.checkers.quals.*;
 
 /*
  * Copyright (c) 2007 - 2011 by Michael Mimo Moratti
@@ -20,7 +21,7 @@ import de.anbos.eclipse.logviewer.plugin.ui.EncodingDialog;
  * and limitations under the License.
  */
 
-public class FileEncodingActionDelegate implements ILogViewerActionDelegate {
+@UIType public class FileEncodingActionDelegate implements ILogViewerActionDelegate {
 
     // Attribute --------------------------------------------------------------------
     

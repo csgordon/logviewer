@@ -44,7 +44,7 @@ import guitypes.checkers.quals.*;
 
 	}
 
-	@UIEffect public Object execute(ExecutionEvent event) throws ExecutionException {
+	public Object execute(ExecutionEvent event) throws ExecutionException {
 		ResourceBundle bundle = LogViewerPlugin.getDefault().getResourceBundle();
 		if (action == null)
 			action = new FindReplaceAction(bundle,"dialog.findreplace.",(LogViewer)HandlerUtil.getActivePart(event));
