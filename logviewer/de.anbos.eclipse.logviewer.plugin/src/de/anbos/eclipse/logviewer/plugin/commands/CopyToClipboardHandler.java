@@ -40,7 +40,7 @@ import guitypes.checkers.quals.*;
 
 	}
 
-	@UIEffect public Object execute(ExecutionEvent event) throws ExecutionException {
+	public Object execute(ExecutionEvent event) throws ExecutionException {
 		LogFileViewer viewer = ((LogViewer)HandlerUtil.getActivePart(event)).getViewer();
 		StyledText text = viewer.getActualViewer().getTextWidget();
 		text.copy();

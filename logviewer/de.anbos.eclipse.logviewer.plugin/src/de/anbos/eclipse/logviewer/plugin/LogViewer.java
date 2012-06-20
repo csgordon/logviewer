@@ -659,7 +659,7 @@ public class LogViewer extends ViewPart {
 
 	// Inner Class -------------------------------------------------------------
 
-	private class ViewDocumentListener implements IDocumentListener {
+	@UIType private class ViewDocumentListener implements IDocumentListener {
 
             public void documentAboutToBeChanged(DocumentEvent documentevent) {
             }
@@ -715,7 +715,7 @@ public class LogViewer extends ViewPart {
             }
     }
 
-    private class TabSelectionListener implements SelectionListener {
+    @UIType private class TabSelectionListener implements SelectionListener {
 
 		/* (non-Javadoc)
 		 * @see org.eclipse.swt.events.SelectionListener#widgetDefaultSelected(org.eclipse.swt.events.SelectionEvent)

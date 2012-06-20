@@ -19,7 +19,8 @@ import de.anbos.eclipse.logviewer.plugin.LogViewer;
  * and limitations under the License.
  */
 
-public class StartTailOnCurrentFileActionDelegate implements ILogViewerActionDelegate {
+import guitypes.checkers.quals.*;
+@UIType public class StartTailOnCurrentFileActionDelegate implements ILogViewerActionDelegate {
 
     // Public -----------------------------------------------------------------------
     

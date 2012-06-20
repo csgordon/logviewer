@@ -19,8 +19,9 @@ import de.anbos.eclipse.logviewer.plugin.preferences.HistoryFile;
  * See the License for the specific language governing permissions
  * and limitations under the License.
  */
+import guitypes.checkers.quals.*;
 
-public class HistoryFileOpenActionDelegate implements ILogViewerActionDelegate {
+@UIType public class HistoryFileOpenActionDelegate implements ILogViewerActionDelegate {
 
 	// Attribute ---------------------------------------------------------------
 	

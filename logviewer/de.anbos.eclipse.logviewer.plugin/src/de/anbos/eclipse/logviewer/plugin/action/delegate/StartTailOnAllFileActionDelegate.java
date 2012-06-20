@@ -18,8 +18,9 @@ package de.anbos.eclipse.logviewer.plugin.action.delegate;
 import org.eclipse.swt.widgets.Shell;
 
 import de.anbos.eclipse.logviewer.plugin.LogViewer;
+import guitypes.checkers.quals.*;
 
-public class StartTailOnAllFileActionDelegate implements ILogViewerActionDelegate {
+@UIType public class StartTailOnAllFileActionDelegate implements ILogViewerActionDelegate {
 
     // Public ------------------------------------------------------------------
     

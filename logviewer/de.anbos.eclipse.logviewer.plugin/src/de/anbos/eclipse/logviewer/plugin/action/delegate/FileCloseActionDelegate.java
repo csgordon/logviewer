@@ -18,8 +18,9 @@ import de.anbos.eclipse.logviewer.plugin.LogViewer;
  * See the License for the specific language governing permissions
  * and limitations under the License.
  */
+import guitypes.checkers.quals.*;
 
-public class FileCloseActionDelegate implements ILogViewerActionDelegate {
+@UIType public class FileCloseActionDelegate implements ILogViewerActionDelegate {
 
 	/* (non-Javadoc)
 	 * @see de.anbos.eclipse.logviewer.plugin.action.delegate.ILogViewerActionDelegate#run(de.anbos.eclipse.logviewer.plugin.LogViewer, org.eclipse.swt.widgets.Shell)
