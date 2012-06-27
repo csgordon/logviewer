@@ -32,7 +32,6 @@ import de.anbos.eclipse.logviewer.plugin.preferences.HistoryFile;
  */
 
 import guitypes.checkers.quals.*;
-@UIType
 public class LocalPullDownMenu implements IMenuListener {
 
 	// Constant ----------------------------------------------------------------
@@ -72,7 +71,7 @@ public class LocalPullDownMenu implements IMenuListener {
 		actionList.add(FILELIST);
 	}
 
-	@SafeEffect public void finalize() {
+	public void finalize() {
 		fillMenu(); // Colin Gordon: BUG: finalizers run on their own thread!  Even if fillMenu() doesn't really need to be UI, this is at least bizarre
 	}
 
