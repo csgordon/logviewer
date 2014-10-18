@@ -21,7 +21,7 @@ import org.eclipse.ui.IWorkbenchPart;
 
 import de.anbos.eclipse.logviewer.plugin.action.ConsoleOpenAction;
 import de.anbos.eclipse.logviewer.plugin.action.FileOpenAction;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 @UIType
 public class EditorPropertyTester extends PropertyTester {

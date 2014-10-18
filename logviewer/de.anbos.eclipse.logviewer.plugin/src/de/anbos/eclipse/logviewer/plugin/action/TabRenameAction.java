@@ -23,7 +23,7 @@ import de.anbos.eclipse.logviewer.plugin.action.delegate.TabRenameActionDelegate
  * and limitations under the License.
  */
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 @UIType
 public class TabRenameAction extends AbstractViewAction {
 
