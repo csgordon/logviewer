@@ -27,7 +27,7 @@ import de.anbos.eclipse.logviewer.plugin.LogViewerPlugin;
 import de.anbos.eclipse.logviewer.plugin.LogFile.LogFileType;
 import de.anbos.eclipse.logviewer.plugin.preferences.FileHistoryTracker;
 import de.anbos.eclipse.logviewer.plugin.preferences.HistoryFile;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 @UIType
 public class FileOpenViewActionDelegate implements ILogViewerActionDelegate {

@@ -4,7 +4,7 @@ import org.eclipse.swt.widgets.Shell;
 
 import de.anbos.eclipse.logviewer.plugin.LogViewer;
 import de.anbos.eclipse.logviewer.plugin.ui.EncodingDialog;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 /*
  * Copyright (c) 2007 - 2011 by Michael Mimo Moratti

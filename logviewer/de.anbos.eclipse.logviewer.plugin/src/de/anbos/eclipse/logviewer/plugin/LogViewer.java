@@ -77,7 +77,7 @@ import org.eclipse.ui.console.IOConsoleOutputStream;
  * See the License for the specific language governing permissions
  * and limitations under the License.
  */
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 @UIType
 public class LogViewer extends ViewPart {
 

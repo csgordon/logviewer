@@ -36,7 +36,7 @@ import de.anbos.eclipse.logviewer.plugin.viewer.rule.TokenData;
  * and limitations under the License.
  */
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 @UIType
 public class DamageRepairer implements IPresentationDamager, IPresentationRepairer {
 

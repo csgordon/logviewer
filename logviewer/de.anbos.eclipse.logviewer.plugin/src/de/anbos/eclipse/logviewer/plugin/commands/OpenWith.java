@@ -24,7 +24,7 @@ import org.eclipse.ui.IWorkbenchPart;
 import org.eclipse.ui.handlers.HandlerUtil;
 
 import de.anbos.eclipse.logviewer.plugin.EditorPropertyTester;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 @UI public class OpenWith implements @UI IHandler { /* Colin Gordon: anno only b/c of the postDirectSupertypes() behavior. */
 	
         @SafeEffect /* Colin Gordon: anno only b/c of the postDirectSupertypes() behavior. */

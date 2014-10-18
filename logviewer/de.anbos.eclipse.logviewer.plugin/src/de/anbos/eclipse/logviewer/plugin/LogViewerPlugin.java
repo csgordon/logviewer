@@ -27,7 +27,7 @@ import org.osgi.framework.BundleContext;
  * See the License for the specific language governing permissions
  * and limitations under the License.
  */
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 /**
  * The main plugin class to be used in the desktop.
  */

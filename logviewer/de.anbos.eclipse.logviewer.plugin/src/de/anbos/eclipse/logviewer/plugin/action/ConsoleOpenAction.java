@@ -30,7 +30,7 @@ import de.anbos.eclipse.logviewer.plugin.LogViewer;
 import de.anbos.eclipse.logviewer.plugin.LogFile.LogFileType;
 
 
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 @UIType
 public class ConsoleOpenAction implements IObjectActionDelegate {
 

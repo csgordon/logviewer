@@ -24,7 +24,7 @@ import org.eclipse.ui.handlers.HandlerUtil;
 
 import de.anbos.eclipse.logviewer.plugin.LogViewer;
 import de.anbos.eclipse.logviewer.plugin.viewer.LogFileViewer;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 
 @UI public class CopyToClipboardHandler implements @UI IHandler { /* Colin Gordon: anno only b/c of the postDirectSupertypes() behavior. */
 

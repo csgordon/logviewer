@@ -34,7 +34,7 @@ import de.anbos.eclipse.logviewer.plugin.LogFile;
 import de.anbos.eclipse.logviewer.plugin.LogViewerPlugin;
 import de.anbos.eclipse.logviewer.plugin.file.BackgroundReader;
 import de.anbos.eclipse.logviewer.plugin.file.IFileChangedListener;
-import guitypes.checkers.quals.*;
+import org.checkerframework.checker.guieffect.qual.*;
 @UIType
 public class LogDocument extends AbstractDocument implements IFileChangedListener {
 
